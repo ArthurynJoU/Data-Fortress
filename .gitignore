@@ -1,0 +1,48 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+.vs/
+/.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+# Asset Store - excluded due to Unity EULA
+Assets/_Creepy_Cat/
+Assets/_Creepy_Cat.meta
+Assets/_Recovery/
+Assets/_Recovery.meta
+Assets/AIRIDev_Scifi_UI_Icons/
+Assets/AIRIDev_Scifi_UI_Icons.meta
+Assets/Cosmic_Retro_Laboratory_Props_Demo/
+Assets/Cosmic_Retro_Laboratory_Props_Demo.meta
+Assets/Free LowPoly SciFi Pack/
+Assets/Free LowPoly SciFi Pack.meta
+Assets/Sci-Fi RTS pack/
+Assets/Sci-Fi RTS pack.meta
+Assets/Sci-Fi Styled Modular Pack/
+Assets/Sci-Fi Styled Modular Pack.meta
+Assets/Surreal-Skyboxes/
+Assets/Surreal-Skyboxes.meta
+Assets/Unity UI Samples/
+Assets/Unity UI Samples.meta

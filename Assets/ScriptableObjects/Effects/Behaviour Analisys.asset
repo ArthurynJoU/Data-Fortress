@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094045b9a43b06748a99626f111301cd, type: 3}
+  m_Name: Behaviour Analisys
+  m_EditorClassIdentifier: Assembly-CSharp::CardBase
+  Cost: 20
+  PrefabToSpawn: {fileID: 5522423526576286692, guid: b5b87e613d8189045bb1c1da83ca40b3, type: 3}
+  CardArt: {fileID: 21300000, guid: ec8bda5f517607349a095f63e9e13b2c, type: 3}

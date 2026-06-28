@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &368245083679520217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5600365763216641388}
+  m_Layer: 9
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5600365763216641388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368245083679520217}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7611840229344076526}
+  m_Father: {fileID: 802246182726869882}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4545646439809902044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7611840229344076526}
+  - component: {fileID: 7574865077487961821}
+  - component: {fileID: 7634406533893931017}
+  - component: {fileID: 4480045834920981815}
+  m_Layer: 9
+  m_Name: Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7611840229344076526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545646439809902044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.157, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5600365763216641388}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!33 &7574865077487961821
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545646439809902044}
+  m_Mesh: {fileID: 2959467708922500008, guid: ad7871bfe3971ff4ba6ac47a46a36264, type: 3}
+--- !u!23 &7634406533893931017
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545646439809902044}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 92f5d0ccc40a96e4c91a066bc28f1d31, type: 2}
+  - {fileID: 9166654230181316274, guid: ad7871bfe3971ff4ba6ac47a46a36264, type: 3}
+  - {fileID: -1580535799172915004, guid: ad7871bfe3971ff4ba6ac47a46a36264, type: 3}
+  - {fileID: 9003353085549565770, guid: ad7871bfe3971ff4ba6ac47a46a36264, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &4480045834920981815
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545646439809902044}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.25
+  m_Center: {x: 0, y: -0.20013425, z: 0}
+--- !u!1 &5207522222591276412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 802246182726869882}
+  - component: {fileID: 2788149250311406592}
+  - component: {fileID: 6405511169721099214}
+  - component: {fileID: 1019189341680511092}
+  m_Layer: 9
+  m_Name: Ransomware
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &802246182726869882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5207522222591276412}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5600365763216641388}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2788149250311406592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5207522222591276412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d761c29d682e5d4781a943e753026fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ransomware
+  MaxHealth: 150
+  Strength: 30
+  EntityName: Ransomware
+  Description: "<color=#FF4444>150 HP</color> | <color=#FFAA00>30 ATK</color>\r\nMalware
+    that encrypts a user's files and demands a ransom. It is often spread through
+    phishing.\r\n<color=#BF00FF>Over time, it builds up anger \u2013 and attacks
+    the towers.</color>"
+  Icon: {fileID: 21300000, guid: 44d8e8438a072104aa8b6ae2cd6a4499, type: 3}
+  Category: 0
+  Speed: 0.3
+  Config: {fileID: 11400000, guid: 561105199645dc543a357fc87383e189, type: 2}
+  ModelTransform: {fileID: 5600365763216641388}
+  _deathEffectPrefab: {fileID: 7836955478666341788, guid: ec10280e9727dc8468e4a925a04e1e42, type: 3}
+  _deathAnimationTime: 1
+  _shaderDissolveParameter: _DissolveAmount
+  _dissolveMaterialTemplate: {fileID: 2100000, guid: 6795ab3cd44308e4f878e651cef94c88, type: 2}
+  _destinationTeleportPrefab: {fileID: 7271424774735577341, guid: f8d299cae8484a041be6bdbeb8961521, type: 3}
+  _destinationAnimationTime: 1
+  _fearAuraPrefab: {fileID: 3422918959581579078, guid: 449a30b4d759537439aa4f76e1a9de3c, type: 3}
+  _stunAuraPrefab: {fileID: 3422918959581579078, guid: ff72dd7ae8798074cbef7303538b3262, type: 3}
+  _slowAuraPrefab: {fileID: 3422918959581579078, guid: e7880e73805e21241aa0d65902681aba, type: 3}
+  _spawnImmunityDuration: 0.5
+  AttackSound: {fileID: 8300000, guid: 24526fa5f852d0f43a43ba7eb81cc5e5, type: 3}
+  DeathSound: {fileID: 8300000, guid: b136dfa22f007a54cb0312771a48c60b, type: 3}
+  BirthSound: {fileID: 8300000, guid: aa99fee169223384686b4b86259afea4, type: 3}
+  Volume: 0.908
+  _radius: 2
+  _towerLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  _angerIncreaseRate: 5
+  _angerDecreaseRate: 30
+  _waveEffectPrefab: {fileID: 3097517158868684879, guid: 94a9bde528527a548a295349b208fae5, type: 3}
+  _towerHitEffectPrefab: {fileID: 2262970136677725786, guid: 954e898379c5d3d479720e54a762cb60, type: 3}
+--- !u!54 &6405511169721099214
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5207522222591276412}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1019189341680511092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5207522222591276412}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.3, z: 0.2}
+  m_Center: {x: 0, y: 0.1, z: 0}
