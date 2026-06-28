@@ -2,7 +2,23 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Assets/AIRIDev_Scifi_UI_Icons" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/Cosmic_Retro_Laboratory_Props_Demo" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/Free LowPoly SciFi Pack" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/Sci-Fi RTS pack" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/Sci-Fi Styled Modular Pack" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/Surreal-Skyboxes" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/Unity UI Samples" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/_Creepy_Cat" />
+      <excludeFolder url="file://$MODULE_DIR$/Assets/_Recovery" />
+      <excludeFolder url="file://$MODULE_DIR$/Library" />
+      <excludeFolder url="file://$MODULE_DIR$/Logs" />
+      <excludeFolder url="file://$MODULE_DIR$/UserSettings" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
