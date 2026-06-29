@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     [Header("Score UI")]
     [SerializeField]
     private TextMeshProUGUI _scoreText;
+    private int _score = 0;
+    private ScoreSender _sender;
 
     [Header("Screen & Panels")]
     [SerializeField]
@@ -57,6 +59,9 @@ public class UIManager : MonoBehaviour
         {
             GameSessionController.Instance.OnPauseStateChanged += TogglePauseScreen;
         }
+
+        _score = 0;
+        _sender = FindFirstObjectByType<ScoreSender>();
     }
 
     private void OnDestroy()
@@ -73,6 +78,8 @@ public class UIManager : MonoBehaviour
         {
             GameSessionController.Instance.OnPauseStateChanged -= TogglePauseScreen;
         }
+
+        _score = 0;
     }
 
     private void UpdateHealthUI(float currentHealth, float maxHealth)
@@ -85,11 +92,10 @@ public class UIManager : MonoBehaviour
 
     private void UpdateScoreUI()
     {
-        int score = 0;
         if ( LevelManager.Instance != null )
-        score = LevelManager.Instance.GetScore();
+        _score = LevelManager.Instance.GetScore();
 
-        _scoreText.text = $"Your score: {score}";
+        _scoreText.text = $"Your score: {_score}";
     }
 
     private void ShowGameOverScreen()
@@ -106,6 +112,9 @@ public class UIManager : MonoBehaviour
         {
             _victoryPanel.SetActive(true);
         }
+
+        if ( _sender != null )
+        _sender.SendScore(_score);
     }
 
     private void TogglePauseScreen(bool isPaused)
