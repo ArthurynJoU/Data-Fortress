@@ -11,6 +11,10 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _healthText;
 
+    [Header("Score UI")]
+    [SerializeField]
+    private TextMeshProUGUI _scoreText;
+
     [Header("Screen & Panels")]
     [SerializeField]
     private GameObject _gameOverPanel;
@@ -44,6 +48,7 @@ public class UIManager : MonoBehaviour
         if ( LevelManager.Instance != null )
         {
             LevelManager.Instance.OnHealthChanged += UpdateHealthUI;
+            LevelManager.Instance.OnLevelWon += UpdateScoreUI;
             LevelManager.Instance.OnLevelWon += ShowVictoryScreen;
             LevelManager.Instance.OnLevelLost += ShowGameOverScreen;
         }
@@ -59,6 +64,7 @@ public class UIManager : MonoBehaviour
         if ( LevelManager.Instance != null )
         {
             LevelManager.Instance.OnHealthChanged -= UpdateHealthUI;
+            LevelManager.Instance.OnLevelWon -= UpdateScoreUI;
             LevelManager.Instance.OnLevelWon -= ShowVictoryScreen;
             LevelManager.Instance.OnLevelLost -= ShowGameOverScreen;
         }
@@ -75,6 +81,15 @@ public class UIManager : MonoBehaviour
         {
             _healthText.text = $"{Mathf.Ceil(currentHealth)} / {maxHealth}";
         }
+    }
+
+    private void UpdateScoreUI()
+    {
+        int score = 0;
+        if ( LevelManager.Instance != null )
+        score = LevelManager.Instance.GetScore();
+
+        _scoreText.text = $"Your score: {score}";
     }
 
     private void ShowGameOverScreen()
