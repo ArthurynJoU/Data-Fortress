@@ -113,8 +113,11 @@ public class UIManager : MonoBehaviour
             _victoryPanel.SetActive(true);
         }
 
-        if ( _sender != null )
-        _sender.SendScore(_score);
+        if (_sender != null)
+        {
+            int currentLevel = PlayerPrefs.GetInt("SelectedLevel", 1);
+            _sender.SendScore(_score, currentLevel);
+        }
     }
 
     private void TogglePauseScreen(bool isPaused)

@@ -19,6 +19,7 @@ public class ScoreController {
 
     @PostMapping("/scores")
     public Score postScoreRepository(@RequestBody Score score) {
+        score.setTime(java.time.LocalDateTime.now());
         scoreRepository.save(score);
         return score;
     }
