@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e1beaa4eb1dd84a94d09b4dfb70a80, type: 3}
   m_Name: Level 2
   m_EditorClassIdentifier: Assembly-CSharp::LevelBase
-  Name: Level 1
+  Name: Level 2
   GridSize: {x: 10, y: 11}
   EnvironmentPrefab: {fileID: 1356714660019269480, guid: 494eb16d3510f7e44be462ea02dcf9eb, type: 3}
   Waves:

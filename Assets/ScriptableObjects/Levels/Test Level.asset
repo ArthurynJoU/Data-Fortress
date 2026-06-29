@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15e1beaa4eb1dd84a94d09b4dfb70a80, type: 3}
+  m_Name: Test Level
+  m_EditorClassIdentifier: Assembly-CSharp::LevelBase
+  Name: Test
+  GridSize: {x: 10, y: 11}
+  EnvironmentPrefab: {fileID: 1356714660019269480, guid: 494eb16d3510f7e44be462ea02dcf9eb, type: 3}
+  Waves:
+  - Name: 1
+    DelayBeforeWave: 3
+    Steps:
+    - Config: {fileID: 11400000, guid: 561105199645dc543a357fc87383e189, type: 2}
+      Count: 2
+      Interval: 2
+  _handSize: 4
+  DeckList:
+  - {fileID: 11400000, guid: 93cf8387f51a10440bf7d807568f1283, type: 2}
+  - {fileID: 11400000, guid: b5b00b4462c8f4740a4c4b8389e80dea, type: 2}
+  - {fileID: 11400000, guid: bc44a6b4a52ce884eacbdbcec2569f6f, type: 2}
+  - {fileID: 11400000, guid: 05c06825fcd0f774e8bec68f146bf9cc, type: 2}
+  - {fileID: 11400000, guid: 0f7e199b589e9754f892aa3f2dbfba44, type: 2}

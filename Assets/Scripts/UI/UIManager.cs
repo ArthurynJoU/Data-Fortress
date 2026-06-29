@@ -11,6 +11,12 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _healthText;
 
+    [Header("Score UI")]
+    [SerializeField]
+    private TextMeshProUGUI _scoreText;
+    private int _score = 0;
+    private ScoreSender _sender;
+
     [Header("Screen & Panels")]
     [SerializeField]
     private GameObject _gameOverPanel;
@@ -44,6 +50,7 @@ public class UIManager : MonoBehaviour
         if ( LevelManager.Instance != null )
         {
             LevelManager.Instance.OnHealthChanged += UpdateHealthUI;
+            LevelManager.Instance.OnLevelWon += UpdateScoreUI;
             LevelManager.Instance.OnLevelWon += ShowVictoryScreen;
             LevelManager.Instance.OnLevelLost += ShowGameOverScreen;
         }
@@ -52,6 +59,9 @@ public class UIManager : MonoBehaviour
         {
             GameSessionController.Instance.OnPauseStateChanged += TogglePauseScreen;
         }
+
+        _score = 0;
+        _sender = FindFirstObjectByType<ScoreSender>();
     }
 
     private void OnDestroy()
@@ -59,6 +69,7 @@ public class UIManager : MonoBehaviour
         if ( LevelManager.Instance != null )
         {
             LevelManager.Instance.OnHealthChanged -= UpdateHealthUI;
+            LevelManager.Instance.OnLevelWon -= UpdateScoreUI;
             LevelManager.Instance.OnLevelWon -= ShowVictoryScreen;
             LevelManager.Instance.OnLevelLost -= ShowGameOverScreen;
         }
@@ -67,6 +78,8 @@ public class UIManager : MonoBehaviour
         {
             GameSessionController.Instance.OnPauseStateChanged -= TogglePauseScreen;
         }
+
+        _score = 0;
     }
 
     private void UpdateHealthUI(float currentHealth, float maxHealth)
@@ -75,6 +88,14 @@ public class UIManager : MonoBehaviour
         {
             _healthText.text = $"{Mathf.Ceil(currentHealth)} / {maxHealth}";
         }
+    }
+
+    private void UpdateScoreUI()
+    {
+        if ( LevelManager.Instance != null )
+        _score = LevelManager.Instance.GetScore();
+
+        _scoreText.text = $"Your score: {_score}";
     }
 
     private void ShowGameOverScreen()
@@ -90,6 +111,12 @@ public class UIManager : MonoBehaviour
         if ( _victoryPanel != null )
         {
             _victoryPanel.SetActive(true);
+        }
+
+        if (_sender != null)
+        {
+            int currentLevel = PlayerPrefs.GetInt("SelectedLevel", 1);
+            _sender.SendScore(_score, currentLevel);
         }
     }
 

@@ -79,6 +79,7 @@ public abstract class EnemyBase : GameEntity, IDamageable, ITickable
     protected float _pathOffSet;
     protected float _baseSpeed;
     protected float EnergyForDeath = 10f;
+    protected float ScoreForDeath = 10;
     
     private bool _isDying = false;
     private ParticleSystem _activeFearAura;
@@ -507,7 +508,7 @@ public abstract class EnemyBase : GameEntity, IDamageable, ITickable
 
         if ( LevelManager.Instance != null )
         {
-            LevelManager.Instance.AddEnergy(EnergyForDeath);
+            LevelManager.Instance.AddEnergy(EnergyForDeath, ScoreForDeath);
         }
 
         Collider col = GetComponent<Collider>();

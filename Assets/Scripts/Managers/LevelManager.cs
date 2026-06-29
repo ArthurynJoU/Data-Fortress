@@ -22,6 +22,8 @@ public class LevelManager: MonoBehaviour
     private float _maximumCoreHealth;
     private int _totalEnemiesSpawned = 0;
 
+    private float _score = 0;
+
     public LevelBase CurrentLevel => _currentLevel;
     public int TotalLevels => _allLevels.Length;
 
@@ -78,11 +80,12 @@ public class LevelManager: MonoBehaviour
         _totalEnemiesSpawned++;
     }
 
-    public void AddEnergy(float amount)
+    public void AddEnergy(float amountHP, float amountScore)
     {
         if ( _cardBoss != null )
         {
-            _cardBoss.AddEnergy(amount);
+            _cardBoss.AddEnergy(amountHP);
+            _score += amountScore;
         }
     }
 
@@ -91,6 +94,12 @@ public class LevelManager: MonoBehaviour
         Debug.Log("MISSION ACCOMPLISHED! The core server remains secure.");
         OnLevelWon?.Invoke();
         Time.timeScale = 0f;
+    }
+
+    public int GetScore()
+    {
+        int result = Mathf.RoundToInt(_score * (_serverHP / _maximumCoreHealth));
+        return result;
     }
 
     private void GameOver()
