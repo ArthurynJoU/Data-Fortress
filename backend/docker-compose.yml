@@ -1,4 +1,15 @@
 services:
+  backend:
+    build: .
+    container_name: backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/datafortress
+      SPRING_DATASOURCE_USERNAME: biba
+      SPRING_DATASOURCE_PASSWORD: boba
+    depends_on:
+      - db
   db:
     container_name: postgres
     image: postgres:15
@@ -6,6 +17,5 @@ services:
       POSTGRES_USER: biba
       POSTGRES_PASSWORD: boba
       POSTGRES_DB: datafortress
-      POSTGRES_HOST_AUTH_METHOD: trust
     ports:
       - "5433:5432"

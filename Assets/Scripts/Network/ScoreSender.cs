@@ -16,7 +16,7 @@ public class ScoreSender : MonoBehaviour
     IEnumerator SendScoreCoroutine(int score, int level)
     {
         string json = $"{{\"score\":{score},\"level\":{level}}}";
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost:8080/scores", json, "application/json"))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://44.204.9.41:8080/scores", json, "application/json"))
         {
             yield return www.SendWebRequest();
 
